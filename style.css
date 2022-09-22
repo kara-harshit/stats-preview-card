@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lexend+Deca:wght@300&display=swap');
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+:root{
+    --bg-color:hsl(233, 47%, 7%);
+    --card-bg:hsl(244, 38%, 16%);
+    --color:hsl(277, 64%, 61%);
+    --fw-bold:700;
+    --fw:400;
+    --font-head:'Inter', sans-serif;
+    --font-para:'Lexend Deca', sans-serif;
+}
+main{
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    font-family: var(--font-head);
+}
+img{
+    width:50%;
+    border-radius: 0 0.5em 0.5em 0;
+    opacity: 0.2;
+}
+.panel{
+    background-color: var(--card-bg);
+    max-width: 70%;
+    display: flex;
+    border-radius: 0.5em;
+}
+h1{
+    font-size: 2.4em ;
+}
+.content_para{
+    margin: 2em 0;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5em;
+    font-weight: var(--fw);
+    font-size: 1em;
+}
+.content{
+    padding: 3em 5.5em 4em 3em;
+}
+.record{
+    margin-top: 4em;
+    display: flex;
+    justify-content: space-between;
+}
+.num_para{
+    font-size: 1.5em;
+}
+strong{
+    color: hsl(277, 64%, 61%);
+}
+.con_para{
+    margin-top: 0.5em;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+@media(max-width:375px)
+{
+    .panel{
+        flex-direction: column-reverse;
+        max-width: 80vw;
+    }
+    .content{
+        padding: 1.5em 1em;
+    }
+    .content_para{
+        margin: 1em 0 1.5em 0;
+        font-size: 0.8em;
+        text-align: center;
+    }
+    img{
+        max-width: 100%;
+        width: 100%;
+        border-radius: 0.5em 0.5em 0 0;
+    }
+    h1{
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .record{
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    .record div{
+        margin-bottom: 1em;
+    }
+    .num_para{
+        text-align: center;
+        font-size: 1em;
+    }
+    .con_para{
+        font-size: 0.5em;
+    }
+}
